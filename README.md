@@ -1,6 +1,7 @@
  summer-chores,
- This project is a demonstraion of how asynchronous operations works using callbacks functions in JavaScript.
+ This project demonstrates how asynchronous operations works using two different approches, callbacks functions and Promises in Javascript.
  The project requires a person to complete a list of summer chores in a specific order. Each chore has a set time allowing for asynchronous operation.
  The project incorportes Math.random() to increase or decrease the likely hold a chore would be completed, if not all remainding chores do ot execute,
  while ensuring the first chore is completed beore person can fall asleep.
- This project was to practice asynchronous operations, callback functions,while managing control flow based on probability, and bringing it all together with callback hell. 
+ The callback version nests each chore function inside the previous one to enure order execution, this method results in a callback hell making code hard to read.
+ The Promise version, chains all the chores using the .then() and .cath() methods instead of nesting the chore functions, thus improving readability. 
